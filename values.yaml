@@ -96,6 +96,11 @@ db:
   password: ""
   database: pdns
 
+extraEnvs: []
+#- name: oidc_oauth_username
+#  value: preferred_username
+
+
 podAnnotations: {}
 
 podLabels: {}

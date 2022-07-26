@@ -62,6 +62,10 @@ spec:
                 secretKeyRef:
                   name: {{ include "powerdnsadmin.fullname" . }}
                   key: SQLALCHEMY_DATABASE_URI
+            {{- range .Values.extraEnvs }}
+            - name: {{ .name }}
+              value: {{ .value | quote }}
+            {{- end }}
           ports:
             - name: http
               containerPort: 80
