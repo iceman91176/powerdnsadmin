@@ -1,8 +1,8 @@
 apiVersion: v2
-appVersion: "0.2.3"
+appVersion: "v0.2.4"
 description: A PowerDNS web interface with advanced features.
 name: powerdnsadmin
-version: 0.3.2
+version: 0.3.4
 type: application
 sources:
   - https://github.com/ngoduykhanh/PowerDNS-Admin
@@ -18,4 +18,4 @@ annotations:
   artifacthub.io/containsSecurityUpdates: "false"
   artifacthub.io/images: |
     - name: powerdns-admin
-      image: ngoduykhanh/powerdns-admin:0.2.3
+      image: ngoduykhanh/powerdns-admin:v0.2.4
